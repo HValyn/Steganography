@@ -166,7 +166,7 @@ with col11:
         st.download_button(label="Download image",data=byte_im, file_name=filename, mime="image")
 with col22:
     st.header("Decode Your Text From the Image")
-    st.header("Please Select a Decoded Image")
+    st.header("Please Select an Image to Decode")
     fileDecode  = st.file_uploader("Your Image to Decode")
     selected = False
     if fileDecode:
