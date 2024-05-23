@@ -137,8 +137,8 @@ def get_image_download_link(img,filename,text):
 col11 ,col3, col22 = st.columns([5,1,5])
 with col11:
     st.header("Encode Yout Text in an Image")
-    st.header("Please Select an Image")
-    file  = st.file_uploader("Your Image to Encode")
+    st.header("Please Select an Image (PNG Format)")
+    file  = st.file_uploader("Your Image to Encode (PNG)")
     selected = False
     textpresent = False
     if file:
@@ -167,7 +167,7 @@ with col11:
 with col22:
     st.header("Decode Your Text From the Image")
     st.header("Please Select an Image to Decode")
-    fileDecode  = st.file_uploader("Your Image to Decode")
+    fileDecode  = st.file_uploader("Your Image to Decode (PNG Format)")
     selected = False
     if fileDecode:
         st.write('You selected `%s`' %(fileDecode.name))
